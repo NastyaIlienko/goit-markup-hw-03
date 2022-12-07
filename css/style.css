@@ -1,0 +1,214 @@
+
+:root {
+    --color-text: #2E2F42;
+    --color-light: #FFFFFF;
+    --color-btn: #4D5AE5;
+    --color-contacts: #434455;
+    --color-footer: #E7E9FC;
+    --color-grey: #F4F4FD;
+    --color-backround: #F5F5F5;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--color-light);
+}
+    
+
+
+/* header css 2 pages */
+
+.link-webstudio
+ {
+font-family: "Raleway", sans-serif;
+font-weight: 800;
+font-size: 18px;
+line-height:1.13;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color:var(--color-text);
+text-decoration: none;
+}
+
+.link-webstudio span {
+ color: var(--color-btn);
+ }
+
+.list{
+list-style: none;
+ }
+
+.header-link
+{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--color-text);
+text-decoration: none;
+}
+
+.header-link:hover,
+.header-link:focus 
+{
+color: var(--color-btn);
+}
+
+/* tittles */
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+   
+
+/* button-css 2 pages */
+
+.btn-orderservice
+{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.18;
+letter-spacing: 0.04em;
+background:var(--color-btn);
+color:var(--color-light);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+}
+
+.btn-orderservice:hover,
+.btn-orderservice:focus
+{
+color: var(--color-light);
+cursor: pointer;
+}
+
+.btn-all
+{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    border-radius: 4px;
+    background-color: var(--color-btn);
+    color: var(--color-light);
+}
+
+.btn-all:hover,
+.btn-all:focus{
+    color: var(--color-light);
+    background-color: var(--color-btn);
+    cursor: pointer;
+}
+
+
+
+.btn-website,
+.btn-app,
+.btn-design,
+.btn-marketing
+ {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    border-radius: 4px;
+    background: var(--color-grey);
+    color: var(--color-btn);
+        
+}
+
+.btn:hover,
+.btn:focus
+{
+ color: var(--color-btn);
+cursor: pointer;
+}
+
+.our-team 
+{
+background:var(--color-backround);
+}
+
+/* tittles and texts css 2 pages */
+
+.tittle-effective-solutions{
+font-weight: 700;
+font-size: 56px;
+line-height: 1.07;
+letter-spacing: 0.02em;
+color: var(--color-light);
+}
+
+.effective {
+background: var(--color-text);
+}
+
+
+.tittle-gallery {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+letter-spacing: 0.02em;
+color: var(--color-text);
+}
+
+.tittle-top {
+font-weight: 700;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: var(--color-text);
+
+}
+
+.text-top{
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color:var(--color-contacts);
+
+}
+
+.gallery-link
+ {
+text-decoration: none;
+}
+/* footer css 2 pages */
+
+.footer
+{
+background: var(--color-text);
+}
+.link-webstudio-footer
+{
+font-family: "Raleway", sans-serif;
+font-weight: 700;
+font-size: 18px;
+line-height: 1.16;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--color-footer);
+text-decoration: none;
+}
+
+.link-webstudio-footer span 
+{
+color: var(--color-btn);
+}
+.text-footer
+{
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color:var(--color-footer);
+}
