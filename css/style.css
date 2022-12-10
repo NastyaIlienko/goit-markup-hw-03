@@ -34,13 +34,16 @@ h1,h2,h3,h4,h5,h6,p,ul {
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+   
     /* outline: 1px solid red; */
 }
 
 .header-container {
     display: flex;
     align-items: center;  
-    
+}
+.header {
+    border-bottom: 2px solid var(--color-grey);
 }
 
 .logo-nav {
@@ -376,17 +379,15 @@ padding-bottom: 572px;
    color:var(--color-contacts);
 }
 
-
-
 .gallery-link
  {
 text-decoration: none;
 }
 
-.gallery-list .gallery-item {
+.gallery-list .gallery-item
+ {
     margin-right: 24px;
     margin-bottom: 48px;
-   
 }
 
 .gallery-list .gallery-item:nth-child(3n) {
@@ -400,6 +401,12 @@ text-decoration: none;
 
 .gallery-item .img {
     margin-bottom: 32px;
+}
+
+.border 
+{
+border: 0.5px solid #F4F4FD;
+border-top: none;
 }
 
 /* footer css 2 pages */
@@ -417,7 +424,7 @@ padding-left: 156px;
 }
 .link-webstudio-footer
 {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 
 font-family: "Raleway", sans-serif;
 font-weight: 700;
