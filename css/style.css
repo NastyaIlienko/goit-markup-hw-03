@@ -65,7 +65,7 @@ h1,h2,h3,h4,h5,h6,p,ul
 {
     display: flex;
     align-items: center;
-    margin-left: 331px;
+    margin-left: auto;
     padding-left: 0;
 }
 
@@ -127,11 +127,10 @@ text-decoration: none;
     margin-left: 40px;
 }
 
-.text-list 
+ .item 
 {
-    flex-basis: calc((100%-72px)/4);
-    column-gap: 24px;
-    margin: 0;
+    flex-basis:  calc((100% - 72px) / 4);
+    margin: 0; 
     padding: 0;
 }
 
@@ -176,6 +175,7 @@ color: var(--color-btn);
 
 .portfolio-list
 {
+    padding-left: 0;
 margin-bottom: 72px;
 justify-content: center;
 align-items: flex-start;   
@@ -199,7 +199,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
  .btn-orderservice:hover,
  .btn-focus
 {
-    background-color:blueviolet;
+    background-color:var(--color-btn);
     cursor: pointer;
 }
 
@@ -256,22 +256,23 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         padding-bottom: 192px;
     }
 
-    .image-team-list 
-    {
-        margin: 0;
-        padding: 0;
-        flex-wrap: wrap;
-        flex-basis: calc((100%-72px)/4);
-        column-gap: 24px;
-    }
+
+ .image-team-list 
+ {
+    padding: 0;
+ }
 
     .team-item 
 {
     background-color:var(--color-light);
     text-align: center;
     border-radius: 4px;
+    margin-right: 24px;
 }
-
+.team-item:last-child
+{
+    margin-right: 0;
+}
 
 .team-box
 {
@@ -279,13 +280,20 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     padding-bottom: 32px;
 }
 
+.image-list
+{
+    padding-left: 0;
+}
 
-.image-list {
+.photo-item
+{
     padding: 0;
-    margin: 0;
-    flex-wrap:wrap ;
-    flex-basis:calc((100%-48px)/3) ;
-    column-gap: 24px;
+    margin-right: 24px;
+}
+
+.photo-item:last-child
+{
+    margin-right: 0;
 }
 
 .our-team 
@@ -315,16 +323,27 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
    color:var(--color-contacts);
 }
 
+.gallery-section
+{
+    padding-bottom: 120px;
+}
+
 .gallery-list
 {
     display: flex;
     flex-wrap: wrap; 
-    row-gap: 48px;
-    column-gap: 24px;
-    flex-basis: calc((100%-48px)/3);
-    margin: 0;
+    margin: auto;
     padding: 0;
+   
 }
+
+.gallery-item
+{
+    width: calc((100% - 48px) /3 );
+    row-gap: 24px;
+    column-gap: 48px;
+}
+
 
 
 .gallery
@@ -336,6 +355,11 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 .gallery-link
 {
     text-decoration: none;
+}
+.gallery-item:hover,
+.gallery-item:focus
+{
+    background-color:var(--color-grey);
 }
 
 .tittle-gallery 
@@ -367,7 +391,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 {
     background: var(--color-text);
     padding-bottom: 100px;
-    padding-top: 138px;
+    padding-top: 100px;
 }
 
 .link-webstudio-footer
